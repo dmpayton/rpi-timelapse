@@ -1,0 +1,2 @@
+daemonize==2.3.1
+picamera==1.9
