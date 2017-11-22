@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
     if args.daemonize:
         print 'Daemonizing...'
-        daemon = daemonize.Daemonize(app=args.app, pid=args.pid, action=main)
+        daemon = daemonize.Daemonize(app=args.app, pid=args.pid, action=lambda: main(args))
         daemon.start()
     else:
         try:
